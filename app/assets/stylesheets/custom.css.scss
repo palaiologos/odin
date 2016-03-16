@@ -1,0 +1,139 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import 'bootstrap/theme';
+
+html, body{
+  height: 100%;
+}
+
+.alert-alert {
+  @extend .alert-warning;
+}
+
+.alert-notice {
+  @extend .alert-info;
+}
+
+/* Navbar */
+
+.navbar-default {
+  background-image: none;
+  background-color: #3b5998;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
+}
+
+.navbar-form{
+  color: #fff;
+}
+
+.navbar-form a{
+  color: #fff;
+}
+
+#remember-me {
+  margin-top: 5px;
+}
+
+#forgot-password{
+  margin-top: 5px;
+}
+
+.notification{
+  position: absolute;
+}
+
+.label{
+  position: absolute;
+  top: 5px;
+  right: -5px;
+}
+
+/* User Profile */
+
+.tab-pane > h3 {
+  font-weight: 600;
+  color: #999;
+}
+
+fieldset{
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+.tabbable{
+  margin-bottom: 20px;
+}
+
+#about{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#friends{
+  display: inline-block;
+}
+
+/*Styling for sign in page*/
+
+input[type="radio"], input[type="checkbox"]{
+  margin: 0;
+}
+
+label{
+  margin: 0;
+}
+
+.signin_text{
+  color: #9daccb;
+}
+
+.signin_label{
+  color: #fff;
+}
+
+.facebook_text_color{
+  color: #0e385f;
+  font-weight: bold;
+}
+
+.gradient{
+  background: linear-gradient(white, #D3D8E8);
+  height: 100%;
+}
+
+.read-false{
+  background-color: #eee
+}
+
+/* Login Page */
+
+.new_user{
+  margin-bottom: 10px;
+}
+
+
+/* Comments */
+
+.well{
+  margin: 5px 5px;
+  padding: 5px 5px;
+  background-color: #F2F2F2;
+}
+
+
+/* Post */
+
+#create-post{
+  margin: 20px 0;
+}
+
+#infinite-scrolling{
+  text-align: center;
+}

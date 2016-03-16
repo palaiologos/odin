@@ -4,4 +4,6 @@
   Title: <%= @post.title %><br>
   Content: <%= @post.content %><br>
   User Email: <%= @post.user.email %><br>
+  <%= link_to "Edit Post", edit_post_path %>
+  <%= link_to "Delete Post", @post, method: :delete, data: { confirm: "You sure?"} %>
 </div>

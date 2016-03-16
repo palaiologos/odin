@@ -1,1 +1,20 @@
 <h1>Posts#Index</h1>
+
+<div>
+  <ul>
+    <% @posts.each do |post| %>
+    <li>
+      <%= post.title %><br>
+      <%= post.content %>
+      <%= link_to "Show", post_path(post) %>
+      <%= link_to "Delete Post", post, method: :delete, data: { confirm: "You sure?"} %>
+    </li>
+
+    <% end %>
+  </ul>
+
+</div>
+
+<div>
+  <%= link_to "Create a Post", new_post_path %>
+</div>
